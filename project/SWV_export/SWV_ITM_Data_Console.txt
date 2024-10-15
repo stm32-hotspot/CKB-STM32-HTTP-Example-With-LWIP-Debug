@@ -1,0 +1,50 @@
+SWV ITM Data Console - ITM Port: 0
+ellosys_timeout: 0x2000f644 abs_time=1002 handler=lwip_cyclic_timer arg=0x8025258
+sys_timeout: 0x2000f630 abs_time=1003 handler=lwip_cyclic_timer arg=0x8025264
+sys_timeout: 0x2000f61c abs_time=60003 handler=lwip_cyclic_timer arg=0x8025270
+sys_timeout: 0x2000f608 abs_time=504 handler=lwip_cyclic_timer arg=0x802527c
+pbuf_alloced_custom(length=0)
+pbuf_alloced_custom(length=0)
+pbuf_alloced_custom(length=0)
+pbuf_alloced_custom(length=0)
+netif: added interface st IP addr 0.0.0.0 netmask 0.0.0.0 gw 0.0.0.0
+netif: setting default interface st
+dhcp_start(netif=0x20000144) st0
+dhcp_start(): mallocing new DHCP client
+dhcp_start(): allocated dhcpdhcp_start(): starting DHCP configuration
+udp_bind(ipaddr = 0.0.0.0, port = 68)
+udp_bind: bound to 0.0.0.0, port 68)
+udp_connect: connected to 0.0.0.0, port 67)
+dhcp_discover()
+pbuf_alloc(length=308)
+pbuf_alloc(length=308) == 0x2000c144
+transaction id xid(4bb5f646)
+dhcp_discover: making request
+dhcp_discover: sendto(DISCOVER, IP_ADDR_BROADCAST, LWIP_IANA_PORT_DHCP_SERVER)
+pbuf_add_header: old 0x2000c18c new 0x2000c184 (8)
+udp_send: added header in given pbuf 0x2000c144
+udp_send: sending datagram of length 316
+udp_send: UDP packet length 316
+udp_send: UDP checksum 0x0000
+udp_send: ip_output_if (,,,,0x11,)
+pbuf_add_header: old 0x2000c184 new 0x2000c170 (20)
+ip4_output_if: st0
+IP header:
++-------------------------------+
+| 4 | 5 |  0x00 |       336     | (v, hl, tos, len)
++-------------------------------+
+|        0      |000|       0   | (id, flags, offset)
++-------------------------------+
+|  255  |   17  |    0x0000     | (ttl, proto, chksum)
++-------------------------------+
+|    0  |    0  |    0  |    0  | (src)
++-------------------------------+
+|  255  |  255  |  255  |  255  | (dest)
++-------------------------------+
+ip4_output_if: call netif->output()
+pbuf_add_header: old 0x2000c170 new 0x2000c162 (14)
+ethernet_output: sending packet 0x2000c144
+pbuf_free(0x2000c144)
+pbuf_free: 0x2000c144 has ref 1, ending here.
+dhcp_discover: deleting()ing
+pbuf_free(0x2000pbuf_alloced_custom(length=0)
